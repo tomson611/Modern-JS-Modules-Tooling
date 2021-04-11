@@ -2,9 +2,10 @@
   "name": "starter",
   "version": "1.0.0",
   "description": "This app is used for learning about modern JS modules and tooling, part of Jonas Schmedtmann's \"The Complete JavaScript Course 2021: From Zero to Expert!\" Udemy course.",
-  "main": "script.js",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,8 @@
   "dependencies": {
     "leaflet": "^1.7.1",
     "lodash-es": "^4.17.21"
+  },
+  "devDependencies": {
+    "parcel": "^2.0.0-beta.2"
   }
 }
