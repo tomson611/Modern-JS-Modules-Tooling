@@ -1,0 +1,23 @@
+{
+  "name": "starter",
+  "version": "1.0.0",
+  "description": "This app is used for learning about modern JS modules and tooling, part of Jonas Schmedtmann's \"The Complete JavaScript Course 2021: From Zero to Expert!\" Udemy course.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomson611/Modern-JS-Modules-Tooling.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomson611/Modern-JS-Modules-Tooling/issues"
+  },
+  "homepage": "https://github.com/tomson611/Modern-JS-Modules-Tooling#readme",
+  "dependencies": {
+    "leaflet": "^1.7.1",
+    "lodash-es": "^4.17.21"
+  }
+}
