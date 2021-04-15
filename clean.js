@@ -29,15 +29,10 @@ addExpense(200, 'Stuff', 'Jay');
 console.log(budget);
 
 const checkExpenses = function () {
-  for (const el of budget) {
-    let lim;
-    if (spendingLimits[el.user]) {
-      lim = spendingLimits[el.user];
-    } else {
-      lim = 0;
-    }
+  for (const entry of budget) {
+    const limit = spendingLimits?.[entry.user] ?? 0;
 
-    if (el.value < -lim) {
+    if (entry.value < -limit) {
       el.flag = 'limit';
     }
   }
