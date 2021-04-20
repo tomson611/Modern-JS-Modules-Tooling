@@ -27,13 +27,13 @@ const addExpense = function (
 ) {
   const cleanUser = user.toLowerCase();
 
-  if (value <= getLimit(cleanUser)) {
-    return [...state, { value: -value, description, user: cleanUser }];
+  return value <= getLimit(cleanUser)
+    ? [...state, { value: -value, description, user: cleanUser }]
+    : state;
 
-    // budget.push({ value: -value, description, user: cleanUser });
-  }
+  // budget.push({ value: -value, description, user: cleanUser });
 };
-addExpense(budget, spendingLimits, 10, 'Pizza 🍕');
+const newBudget1 = addExpense(budget, spendingLimits, 10, 'Pizza 🍕');
 addExpense(budget, spendingLimits, 100, 'Going to movies 🍿', 'Matilda');
 addExpense(budget, spendingLimits, 200, 'Stuff', 'Jay');
 
